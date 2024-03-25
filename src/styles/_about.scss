@@ -1,0 +1,85 @@
+@use 'var';
+
+.about {
+    display: flex;
+    margin: 48px;
+
+    img {
+        height: 540px;
+    }
+
+    &__nav{
+        display: flex
+    }
+    
+    &__tabs {
+        display: flex;
+        flex-direction: column;
+        margin: 0 24px;
+
+        &__button {
+            padding: 16px 10px;
+            color: white;
+            background-color: var.$darkPurple;
+            border: none;
+            text-align: start;
+            font-size: 24px;
+            cursor: pointer;
+            border-left: 2px solid white;
+
+            &:hover {
+                background-color: var.$white;
+            }
+
+            &--is-active {
+                background-color: var.$white;
+
+            }
+
+        }
+
+    }
+
+
+    &__sinopse{
+        p{
+            margin-bottom: 24px;
+        }
+        table{
+            td{
+                padding-right: 10px;
+            }
+        }
+    }
+
+    &__trailer{
+        a{
+            display: block;
+ 
+
+        }
+    }
+
+    &__list {
+        display: none;
+        padding: 16px 10px;
+
+        &--is-active {
+            display: block;
+        }
+       
+    }
+
+    &__payment{
+        margin-left: 24px;
+        margin-top: 32px;
+        h2{
+            margin: 16px 0;
+            font-weight: normal;
+        }
+        button{
+            font-weight: normal;
+            width: 150px;
+        }
+    }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__left">
+            <img src="dist/images/logo.png" alt="Logo do site">
+            <button class="button">Filmes</button>
+            <button class="button">Séries</button>
+        </div>
+        <div class="header__right">
+            <button class="button">Entrar</button>
+            <button class="button button--2">Cadastrar-se</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__content">
+            <img src="dist/images/barbie-logo.png" alt="Barbie Logo">
+            <h2 class="text--lg">Assista agora, exclusivo em <br>nossa plataforma.</h2>
+            <button class="button button--4">Alugue agora</button>
+            <p class="text--sm">A partir de R$6,90</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <img src="dist/images/about.png" alt="Cena do filme">
+        <div class="about__content">
+            <div class="about__nav">
+                <nav class="about__tabs">
+                    <button class="about__tabs__button about__tabs__button--is-active"
+                        data-tab-button="sinopse">Sinopse</button>
+                    <button class="about__tabs__button" data-tab-button="elenco">Elenco</button>
+                    <button class="about__tabs__button" data-tab-button="trailers">Trailers</button>
+                    <button class="about__tabs__button" data-tab-button="aval">Avaliações</button>
+                </nav>
+                <div class="about__tabs__content">
+                    <div data-tab-id="sinopse" class="about__list about__sinopse about__list--is-active">
+                        <p>Viver na Barbielândia significa ser perfeita em um lugar perfeito. A não ser que você tenha
+                            uma
+                            crise
+                            existencial. Ou você seja um Ken.</p>
+                        <table class="sinopse_table">
+                            <tr>
+                                <td><b>Gênero</b></td>
+                                <td>Comédia, ficção</td>
+                            </tr>
+                            <tr>
+                                <td><b>Classificação</b></td>
+                                <td>12 anos</td>
+                            </tr>
+                            <tr>
+                                <td><b>Duração</b></td>
+                                <td>114 minutos</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div data-tab-id="elenco" class="about__list">
+                        <p>Estrelando: Margot Robbie, Issa Rae, Kate McKinnon, Alexandra Shipp, Emma Mackey, Hari Nef,
+                            Sharon
+                            Rooney, Ana Cruz Kayne, Ritu Arya, Dua Lipa, Nicola Coughlan, Emerald Fennell, Ryan Gosling,
+                            Simu
+                            Liu,
+                            Kingsley Ben-Adir, Ncuti Gatwa, Scott Evans, John Cena, Michael Cera, America Ferrera,
+                            Ariana
+                            Greenblatt, Rhea Perlman, Helen Mirren, Will Ferrell, Connor Swindells, Jamie Demetriou</p>
+                    </div>
+                    <div data-tab-id="trailers" class="about__list about__trailer">
+                        <a href="#" class="button">Trailer 1</a>
+                        <a href="#" class="button">Trailer 2</a>
+                        <a href="#" class="button">Trailer 3</a>
+                    </div>
+                    <div data-tab-id="aval" class="about__list">
+                        <img style="height: 100px;" src="dist/images/aval.jpeg" alt="avaliações">
+                    </div>
+                </div>
+            </div>
+            <div class="about__payment">
+                <h2>Alugar</h2>
+                <button class="button button--2">R$9,90 HD</button>
+                <button class="button button--3">R$6,90 SD</button>
+
+                <h2>Comprar</h2>
+                <button class="button button--2">R$29,90 HD</button>
+                <button class="button button--3">R$24,90 SD</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="recommended">
+        <h2>Você também pode gostar</h2>
+        <ul class="recommended__movies">
+            <li>
+                <img src="dist/images/recommended/alem-da-vida.png" alt="Além da vida">
+                <h4 class="text--sm">Além da Vida</h4>
+            </li>
+            <li>
+                <img src="dist/images/recommended/hp-4.png" alt="Harry Potter 4">
+                <h4 class="text--sm">Harry Potter e o Cálice de Fogo</h4>
+            </li>
+            <li>
+                <img src="dist/images/recommended/alem-da-vida.png" alt="Além da vida">
+                <h4 class="text--sm">Além da Vida</h4>
+            </li>
+            <li>
+                <img src="dist/images/recommended/alem-da-vida.png" alt="Além da vida">
+                <h4 class="text--sm">Além da Vida</h4>
+            </li>
+            <li>
+                <img src="dist/images/recommended/alem-da-vida.png" alt="Além da vida">
+                <h4 class="text--sm">Além da Vida</h4>
+            </li>
+            <li>
+                <img src="dist/images/recommended/alem-da-vida.png" alt="Além da vida">
+                <h4 class="text--sm">Além da Vida</h4>
+            </li>
+        </ul>
+        <div class="alert">
+            <p class="text">Quer alugar ou comprar seus filmes preferidos? Faça seu cadastro!</p>
+            <button class="button button--2">Cadastrar-se</button>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Contato</a>
+        <a href="#">Conta</a>
+        <a href="#">Perguntas frequentes</a>
+        <p>&copy; Todos os direitos reservados</p>
+    </footer>
+
+    <script src="dist/js/script.js"></script>
+</body>
+
+</html>

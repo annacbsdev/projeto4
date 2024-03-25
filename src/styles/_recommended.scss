@@ -1,0 +1,32 @@
+@use 'var';
+
+.recommended{
+    h2{
+        text-align: center;
+        margin: 64px 0 40px 0
+    }
+
+    &__movies{
+        width: 70vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        li{
+            list-style: none;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
+
+.alert{
+    background-color: var.$white;
+    width: 80vw;
+    margin: 32px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
